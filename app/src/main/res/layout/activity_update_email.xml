@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateEmailActivity"
+    android:orientation="vertical"
+    android:background="#B9B7B7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@color/grey">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_register_head"
+            android:layout_marginTop="40dp"
+            android:text="You can update your email address now. Please enter your password and verify before continuing"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/green"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_update_email"
+            android:layout_below="@+id/textview_register_head"
+            android:text="Current Email"
+            android:padding="6dp"
+            android:textSize="16dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/green"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_update_email_old"
+            android:inputType="textPersonName"
+            android:textSize="16dp"
+            android:padding="6dp"
+            android:layout_below="@+id/textview_update_email"
+            android:textColorHint="@color/green"
+            android:textColor="@color/green"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_update_email_verify_password"
+            android:layout_below="@+id/textview_update_email_old"
+            android:text="Password"
+            android:padding="6dp"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/green"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_update_email_verify_password"
+            android:hint="Enter Your Password"
+            android:inputType="textPassword"
+            android:textSize="16dp"
+            android:padding="6dp"
+            android:layout_below="@+id/textview_update_email_verify_password"
+            android:textColorHint="@color/green"
+            android:textColor="@color/green"
+            android:background="@drawable/border"/>
+
+        <Button
+            android:id="@+id/button_authenticate_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="30dp"
+            android:text="Authenticate"
+            android:background="@drawable/border"
+            android:layout_below="@+id/edittext_update_email_verify_password"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="40dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/grey">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_update_email_authenticated"
+            android:text="Your profile is not authenticated/verified yet!"
+            android:layout_marginTop="20dp"
+            android:padding="6dp"
+            android:textColor="@color/green"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_update_email_new"
+            android:layout_below="@+id/textview_update_email_authenticated"
+            android:text="New Email"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:textColor="@color/green"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_update_email_new"
+            android:hint="Enter Your New Email"
+            android:inputType="textEmailAddress"
+            android:textSize="16dp"
+            android:padding="6dp"
+            android:layout_below="@+id/textview_update_email_new"
+            android:textColorHint="@color/green"
+            android:textColor="@color/green"
+            android:background="@drawable/border"/>
+
+        <Button
+            android:id="@+id/button_update_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="30dp"
+            android:text="Update Email"
+            android:background="@drawable/border"
+            android:layout_below="@+id/edittext_update_email_new"/>
+
+    </RelativeLayout>
+</LinearLayout>
