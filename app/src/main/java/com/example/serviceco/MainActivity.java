@@ -10,6 +10,8 @@ import android.widget.Button;
 
 import com.airbnb.lottie.LottieAnimationView;
 
+import java.util.Objects;
+
 public class MainActivity extends AppCompatActivity {
 
     LottieAnimationView v;
@@ -20,13 +22,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Set up title
-        getSupportActionBar().setTitle("Service Co");
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.green)));
+        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.green)));
 
         //Lottie Animation
-        v = findViewById(R.id.imageview_logo);
-        v.setAnimation(R.raw.search);
-        v.playAnimation();
+//        v = findViewById(R.id.imageview_logo);
+//        v.setAnimation(R.raw.search);
+//        v.playAnimation();
 
         //Login Activity
         Button btnLogin = findViewById(R.id.button_login);

@@ -5,9 +5,11 @@
     <item android:title="Refresh"
         android:icon="@drawable/ic_refresh_white"
         android:alphabeticShortcut="r"
-        android:orderInCategory="1"
-        app:showAsAction="ifRoom"
         android:id="@+id/menu_refresh"/>
+
+    <item  android:title="Home"
+        android:id="@+id/menu_home"
+        />
 
     <item  android:title="Update Profile"
             android:id="@+id/menu_update_profile"
@@ -15,10 +17,6 @@
 
     <item  android:title="Update Email"
         android:id="@+id/menu_update_email"
-        />
-
-    <item  android:title="Settings"
-        android:id="@+id/menu_settings"
         />
 
     <item  android:title="Change Password"

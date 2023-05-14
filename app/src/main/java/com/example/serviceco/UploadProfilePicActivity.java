@@ -45,6 +45,8 @@ public class UploadProfilePicActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upload_profile_pic);
 
+        getSupportActionBar().setTitle("Upload Profile");
+
         Objects.requireNonNull(getSupportActionBar()).setTitle("Upload Profile Pic");
 
         Button buttonUploadPicChoose = findViewById(R.id.upload_pic_choose_button);
@@ -162,33 +164,36 @@ public class UploadProfilePicActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-
         if(id==R.id.menu_refresh){
             //Refresh the page
             startActivity(getIntent());
             finish();
             overridePendingTransition(0,0);
         }
+        else if(id==R.id.menu_home){
+            Intent intent = new Intent(UploadProfilePicActivity.this, Home.class);
+            startActivity(intent);
+        }
         else if(id==R.id.menu_update_profile){
             Intent intent = new Intent(UploadProfilePicActivity.this, UpdateProfileActivity.class);
             startActivity(intent);
             
         }
-//        else if(id==R.id.menu_update_email){
-//            Intent intent = new Intent(UserProfileActivity.this, UpdateEmailActivity.class);
-//            startActivity(intent);
-//        }
-        else if(id==R.id.menu_settings){
-            Toast.makeText(UploadProfilePicActivity.this,"User Setting",Toast.LENGTH_SHORT).show();
+        else if(id==R.id.menu_update_email){
+            Intent intent = new Intent(UploadProfilePicActivity.this, UpdateEmailActivity.class);
+            startActivity(intent);
+            finish();
         }
-//        else if(id==R.id.menu_change_password){
-//            Intent intent = new Intent(UserProfileActivity.this, ChangePasswordActivity.class);
-//            startActivity(intent);
-//        }
-//        else if(id==R.id.menu_delete_profile){
-//            Intent intent = new Intent(UserProfileActivity.this, DeleteProfileActivity.class);
-//            startActivity(intent);
-//        }
+        else if(id==R.id.menu_change_password){
+            Intent intent = new Intent(UploadProfilePicActivity.this, ChangePasswordActivity.class);
+            startActivity(intent);
+            finish();
+        }
+        else if(id==R.id.menu_delete_profile){
+            Intent intent = new Intent(UploadProfilePicActivity.this, DeleteProfileActivity.class);
+            startActivity(intent);
+            finish();
+        }
         else if(id==R.id.menu_logout){
             authProfile.signOut();
             Toast.makeText(UploadProfilePicActivity.this,"Logged Out",Toast.LENGTH_SHORT).show();

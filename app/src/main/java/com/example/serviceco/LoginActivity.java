@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        getSupportActionBar().setTitle("Login");
+        getSupportActionBar().hide();
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.green)));
         editTextLoginEmail = findViewById(R.id.edittext_login_email);
         editTextLoginPassword = findViewById(R.id.edittext_login_password);
@@ -58,22 +58,22 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         //Show hide password using eye icon
-        ImageView imageViewShowHidePass = findViewById(R.id.imageview_show_hide_pwd);
-        imageViewShowHidePass.setImageResource(R.drawable.ic_hide_pwd);
-        imageViewShowHidePass.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(editTextLoginPassword.getTransformationMethod().equals(HideReturnsTransformationMethod.getInstance())){
-                    //If password is visible then hide it
-                    editTextLoginPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                    //change icon
-                    imageViewShowHidePass.setImageResource(R.drawable.ic_hide_pwd);
-                }else{
-                    editTextLoginPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                    imageViewShowHidePass.setImageResource(R.drawable.ic_show_pwd);
-                }
-            }
-        });
+//        ImageView imageViewShowHidePass = findViewById(R.id.imageview_show_hide_pwd);
+//        imageViewShowHidePass.setImageResource(R.drawable.ic_hide_pwd);
+//        imageViewShowHidePass.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(editTextLoginPassword.getTransformationMethod().equals(HideReturnsTransformationMethod.getInstance())){
+//                    //If password is visible then hide it
+//                    editTextLoginPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+//                    //change icon
+//                    imageViewShowHidePass.setImageResource(R.drawable.ic_hide_pwd);
+//                }else{
+//                    editTextLoginPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+//                    imageViewShowHidePass.setImageResource(R.drawable.ic_show_pwd);
+//                }
+//            }
+//        });
 
         //Login Button
         Button buttonLogin = findViewById(R.id.button_login);
@@ -116,7 +116,7 @@ public class LoginActivity extends AppCompatActivity {
                         Toast.makeText(LoginActivity.this, "You logged in",Toast.LENGTH_SHORT).show();
 
                         //Start the UserProfileActivity
-                        startActivity(new Intent(LoginActivity.this, UserProfileActivity.class));
+                        startActivity(new Intent(LoginActivity.this, Home.class));
                         finish();
                     }
                     else{
@@ -178,7 +178,7 @@ public class LoginActivity extends AppCompatActivity {
         if(authProfile.getCurrentUser()!=null){
             Toast.makeText(LoginActivity.this, "Already Logged in", Toast.LENGTH_SHORT).show();
             //Start the UserProfileActivity
-            startActivity(new Intent(LoginActivity.this, UserProfileActivity.class));
+            startActivity(new Intent(LoginActivity.this, Home.class));
         }
         else{
             Toast.makeText(LoginActivity.this, "You can now login", Toast.LENGTH_SHORT).show();

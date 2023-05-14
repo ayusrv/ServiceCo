@@ -141,6 +141,7 @@ public class UpdateEmailActivity extends AppCompatActivity {
                         }
                     });
                 }
+                progressBar.setVisibility(View.GONE);
             }
         });
     }
@@ -183,12 +184,15 @@ public class UpdateEmailActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-
         if(id==R.id.menu_refresh){
             //Refresh the page
             startActivity(getIntent());
             finish();
             overridePendingTransition(0,0);
+        }
+        else if(id==R.id.menu_home){
+            Intent intent = new Intent(UpdateEmailActivity.this, Home.class);
+            startActivity(intent);
         }
         else if(id==R.id.menu_update_profile){
             Intent intent = new Intent(UpdateEmailActivity.this, UpdateProfileActivity.class);
@@ -198,9 +202,6 @@ public class UpdateEmailActivity extends AppCompatActivity {
             Intent intent = new Intent(UpdateEmailActivity.this, UpdateEmailActivity.class);
             startActivity(intent);
             finish();
-        }
-        else if(id==R.id.menu_settings){
-            Toast.makeText(UpdateEmailActivity.this,"User Setting",Toast.LENGTH_SHORT).show();
         }
         else if(id==R.id.menu_change_password){
             Intent intent = new Intent(UpdateEmailActivity.this, ChangePasswordActivity.class);

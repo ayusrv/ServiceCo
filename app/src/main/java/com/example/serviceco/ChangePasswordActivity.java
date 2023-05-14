@@ -104,7 +104,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
                                 Toast.makeText(ChangePasswordActivity.this, "Password has been verified "+"Change password now", Toast.LENGTH_SHORT).show();
                                 
                                 buttonChangePwd.setBackgroundTintList(ContextCompat.getColorStateList(
-                                        ChangePasswordActivity.this, R.color.green));
+                                        ChangePasswordActivity.this, R.color.background));
 
                                 buttonChangePwd.setOnClickListener(new View.OnClickListener() {
                                     @Override
@@ -160,7 +160,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<Void> task) {
                     if(task.isSuccessful()){
                         Toast.makeText(ChangePasswordActivity.this, "Password has been changed", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(ChangePasswordActivity.this, UserProfileActivity.class);
+                        Intent intent = new Intent(ChangePasswordActivity.this,UserProfileActivity.class);
                         startActivity(intent);
                         finish();
                     }
@@ -190,12 +190,15 @@ public class ChangePasswordActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-
         if(id==R.id.menu_refresh){
             //Refresh the page
             startActivity(getIntent());
             finish();
             overridePendingTransition(0,0);
+        }
+        else if(id==R.id.menu_home){
+            Intent intent = new Intent(ChangePasswordActivity.this, Home.class);
+            startActivity(intent);
         }
         else if(id==R.id.menu_update_profile){
             Intent intent = new Intent(ChangePasswordActivity.this, UpdateProfileActivity.class);
@@ -205,9 +208,6 @@ public class ChangePasswordActivity extends AppCompatActivity {
             Intent intent = new Intent(ChangePasswordActivity.this, UpdateEmailActivity.class);
             startActivity(intent);
             finish();
-        }
-        else if(id==R.id.menu_settings){
-            Toast.makeText(ChangePasswordActivity.this,"User Setting",Toast.LENGTH_SHORT).show();
         }
         else if(id==R.id.menu_change_password){
             Intent intent = new Intent(ChangePasswordActivity.this, ChangePasswordActivity.class);

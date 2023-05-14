@@ -5,14 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UpdateProfileActivity"
-    android:background="@color/grey">
+    android:background="@color/background"
+    android:padding="15dp">
 
-    <RelativeLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:layout_margin="15dp"
-        android:background="@color/grey">
+        android:id="@+id/textview_login_head"
+        android:text="@string/any_text"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -21,8 +26,10 @@
             android:layout_marginTop="30dp"
             android:text="Update your profile details"
             android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textColor="@color/green"
+            android:textSize="24dp"
+            android:layout_below="@id/textview_login_head"
+            android:fontFamily="@font/adamina"
+            android:textColor="#CEFFFFFF"
             android:textStyle="bold"/>
 
         <TextView
@@ -33,8 +40,8 @@
             android:text="Full Name"
             android:padding="6dp"
             android:textSize="16dp"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/green"/>
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -42,11 +49,11 @@
             android:id="@+id/edittext_update_full_name"
             android:hint="Enter Your Full Name"
             android:inputType="textPersonName"
-            android:textSize="16dp"
+            android:textSize="20dp"
             android:padding="6dp"
             android:layout_below="@+id/textview_update_full_name"
-            android:textColorHint="@color/green"
-            android:textColor="@color/green"
+            android:textColorHint="@color/background"
+            android:textColor="@color/background"
             android:background="@drawable/border"/>
 
         <TextView
@@ -57,8 +64,8 @@
             android:text="Location"
             android:padding="6dp"
             android:textSize="16dp"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/green"/>
+            android:layout_marginTop="25dp"
+            android:textColor="@color/white"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -66,11 +73,11 @@
             android:id="@+id/edittext_update_location"
             android:hint="Enter Your City"
             android:inputType="textPersonName"
-            android:textSize="16dp"
+            android:textSize="20dp"
             android:padding="6dp"
             android:layout_below="@+id/textview_update_location"
-            android:textColorHint="@color/green"
-            android:textColor="@color/green"
+            android:textColorHint="@color/background"
+            android:textColor="@color/background"
             android:background="@drawable/border"/>
 
         <TextView
@@ -81,8 +88,8 @@
             android:text="Phone Number"
             android:padding="6dp"
             android:textSize="16dp"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/green"/>
+            android:layout_marginTop="25dp"
+            android:textColor="@color/white"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -90,12 +97,23 @@
             android:id="@+id/edittext_update_phone"
             android:hint="Enter Your Phone Number"
             android:inputType="number"
-            android:textSize="16dp"
+            android:textSize="20dp"
             android:padding="6dp"
             android:layout_below="@+id/textview_update_phone"
-            android:textColorHint="@color/green"
-            android:textColor="@color/green"
+            android:textColorHint="@color/background"
+            android:textColor="@color/background"
             android:background="@drawable/border"/>
+
+        <Button
+            android:id="@+id/button_updateProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="30dp"
+            android:text="Update Profile"
+            android:background="@drawable/border"
+            android:layout_below="@+id/edittext_update_phone"/>
 
         <Button
             android:id="@+id/button_upload_profile_pic"
@@ -106,7 +124,7 @@
             android:layout_marginTop="30dp"
             android:text="Update Photo"
             android:background="@drawable/border"
-            android:layout_below="@+id/edittext_update_phone"/>
+            android:layout_below="@+id/button_updateProfile"/>
 
         <Button
             android:id="@+id/button_update_email"
@@ -119,17 +137,6 @@
             android:background="@drawable/border"
             android:layout_below="@+id/button_upload_profile_pic"/>
 
-        <Button
-            android:id="@+id/button_updateProfile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginTop="30dp"
-            android:text="Update Profile"
-            android:background="@drawable/border"
-            android:layout_below="@+id/button_update_email"/>
-
         <ProgressBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -138,6 +145,5 @@
             android:layout_centerVertical="true"
             android:elevation="40dp"
             android:visibility="gone"/>
-    </RelativeLayout>
 
 </RelativeLayout>

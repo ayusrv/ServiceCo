@@ -42,7 +42,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_profile);
 
-        getSupportActionBar().setTitle("Update Profile Data");
+        getSupportActionBar().setTitle("Update Profile");
         progressBar = findViewById(R.id.progress_bar);
         editTextUpdateName = findViewById(R.id.edittext_update_full_name);
         editTextUpdateLocation = findViewById(R.id.edittext_update_location);
@@ -209,12 +209,15 @@ public class UpdateProfileActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-
         if(id==R.id.menu_refresh){
             //Refresh the page
             startActivity(getIntent());
             finish();
             overridePendingTransition(0,0);
+        }
+        else if(id==R.id.menu_home){
+            Intent intent = new Intent(UpdateProfileActivity.this, Home.class);
+            startActivity(intent);
         }
         else if(id==R.id.menu_update_profile){
             Intent intent = new Intent(UpdateProfileActivity.this, UpdateProfileActivity.class);
@@ -224,9 +227,6 @@ public class UpdateProfileActivity extends AppCompatActivity {
             Intent intent = new Intent(UpdateProfileActivity.this, UpdateEmailActivity.class);
             startActivity(intent);
             finish();
-        }
-        else if(id==R.id.menu_settings){
-            Toast.makeText(UpdateProfileActivity.this,"User Setting",Toast.LENGTH_SHORT).show();
         }
         else if(id==R.id.menu_change_password){
             Intent intent = new Intent(UpdateProfileActivity.this, ChangePasswordActivity.class);

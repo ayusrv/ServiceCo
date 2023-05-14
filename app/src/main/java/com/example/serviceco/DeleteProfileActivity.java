@@ -257,6 +257,10 @@ public class DeleteProfileActivity extends AppCompatActivity {
             finish();
             overridePendingTransition(0,0);
         }
+        else if(id==R.id.menu_home){
+            Intent intent = new Intent(DeleteProfileActivity.this, Home.class);
+            startActivity(intent);
+        }
         else if(id==R.id.menu_update_profile){
             Intent intent = new Intent(DeleteProfileActivity.this, UpdateProfileActivity.class);
             startActivity(intent);
@@ -265,9 +269,6 @@ public class DeleteProfileActivity extends AppCompatActivity {
             Intent intent = new Intent(DeleteProfileActivity.this, UpdateEmailActivity.class);
             startActivity(intent);
             finish();
-        }
-        else if(id==R.id.menu_settings){
-            Toast.makeText(DeleteProfileActivity.this,"User Setting",Toast.LENGTH_SHORT).show();
         }
         else if(id==R.id.menu_change_password){
             Intent intent = new Intent(DeleteProfileActivity.this, ChangePasswordActivity.class);

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ServiceCo</string>
+    <string name="service_co">Service Co</string>
+    <string name="any_text"><font fgcolor='#ffffff'>Service</font><font fgcolor='#FFC369'>Co</font></string>
+    <string name="any_text2"><font fgcolor='#664962'>Service</font><font fgcolor='#FFC369'>Co</font></string>
+    <string name="any_text3"><font fgcolor='#ffffff'>S</font><font fgcolor='#FFC369'>C</font></string>
 </resources>

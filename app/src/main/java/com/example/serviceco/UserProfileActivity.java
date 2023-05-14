@@ -3,6 +3,7 @@ package com.example.serviceco;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -33,6 +34,7 @@ public class UserProfileActivity extends AppCompatActivity {
     private String fullName, email, location, mobile;
     private ImageView imageView;
     private FirebaseAuth authProfile;
+    SwipeRefreshLayout swipeContainer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +42,7 @@ public class UserProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_user_profile);
 
         getSupportActionBar().setTitle("Profile");
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.green)));
+        swipetoLoad();
         textViewWelcome = findViewById(R.id.textView_show_welcome);
         textViewEmail =findViewById(R.id.textView_show_email);
         textViewFullName = findViewById(R.id.textView_show_full_name);
@@ -69,6 +71,22 @@ public class UserProfileActivity extends AppCompatActivity {
             progressBar.setVisibility(View.VISIBLE);
             showUserProfile(firebaseUser);
         }
+    }
+
+    private void swipetoLoad() {
+        swipeContainer = findViewById(R.id.swipeContainer);
+
+        swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                startActivity(getIntent());
+                finish();
+                overridePendingTransition(0,0);
+                swipeContainer.setRefreshing(false);
+            }
+        });
+
+        swipeContainer.setColorSchemeResources(android.R.color.holo_blue_bright, android.R.color.holo_green_light, android.R.color.holo_orange_light, android.R.color.holo_red_light);
     }
 
     //User coming to profile after successful registration
@@ -163,6 +181,10 @@ public class UserProfileActivity extends AppCompatActivity {
             finish();
             overridePendingTransition(0,0);
         }
+        else if(id==R.id.menu_home){
+            Intent intent = new Intent(UserProfileActivity.this, Home.class);
+            startActivity(intent);
+        }
         else if(id==R.id.menu_update_profile){
             Intent intent = new Intent(UserProfileActivity.this, UpdateProfileActivity.class);
             startActivity(intent);
@@ -171,9 +193,6 @@ public class UserProfileActivity extends AppCompatActivity {
             Intent intent = new Intent(UserProfileActivity.this, UpdateEmailActivity.class);
             startActivity(intent);
             finish();
-        }
-        else if(id==R.id.menu_settings){
-            Toast.makeText(UserProfileActivity.this,"User Setting",Toast.LENGTH_SHORT).show();
         }
         else if(id==R.id.menu_change_password){
             Intent intent = new Intent(UserProfileActivity.this, ChangePasswordActivity.class);

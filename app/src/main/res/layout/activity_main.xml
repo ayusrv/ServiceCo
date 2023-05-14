@@ -5,48 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/grey">
+    android:background="@drawable/background">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:padding="15dp"
-        android:background="@color/grey">
-        
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/imageview_logo"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            app:lottie_rawRes="@raw/search"
-            android:layout_marginTop="30dp"
-            android:maxWidth="200dp"
-            android:adjustViewBounds="true"
-            app:lottie_loop="true"
-            android:layout_centerHorizontal="true"/>
+        android:layout_margin="15dp">
 
         <TextView
-            android:id="@+id/textview_main_head"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imageview_logo"
-            android:layout_marginTop="32dp"
-            android:text="Welcome to Service Co"
-            android:gravity="center"
-            android:textSize="23sp"
-            android:fontFamily="@font/adamina"
-            android:textColor="@color/green"
-            android:textStyle="bold" />
+            android:id="@+id/textview_main_head"
+            android:layout_marginTop="50dp"
+            android:text="@string/any_text"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/textview_main_body"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/textview_main_head"
-            android:layout_marginTop="20dp"
-            android:text="Accept Incoming \n Multiple Source"
+            android:layout_marginTop="50dp"
+            android:text="Your one-stop-shop for home services"
             android:textStyle="bold"
-            android:textSize="17sp"
+            android:textSize="47sp"
             android:textColor="#b5b7c6"
             android:gravity="center"/>
 
@@ -70,7 +56,7 @@
             android:text="Register"
             android:textColor="@color/white"
             android:layout_below="@+id/button_login"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="70dp"
             android:layout_marginLeft="70dp"/>
 
