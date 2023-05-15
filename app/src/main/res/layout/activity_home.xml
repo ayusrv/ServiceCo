@@ -6,14 +6,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:id="@+id/swipeContainer"
+    tools:context=".Home"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
-        android:orientation="vertical"
-        tools:context=".Home">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textview_login_head"
@@ -92,6 +92,7 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cook"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="20dp"
@@ -99,7 +100,7 @@
                 app:cardCornerRadius="10dp">
 
                 <ImageView
-                    android:id="@+id/cook"
+                    android:id="@+id/cook_img"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
@@ -120,6 +121,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/babysitter"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="20dp"
@@ -127,7 +129,7 @@
                 app:cardCornerRadius="10dp">
 
                 <ImageView
-                    android:id="@+id/babySitter"
+                    android:id="@+id/babySitter_img"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
@@ -165,6 +167,7 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/labour"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="20dp"
@@ -172,7 +175,7 @@
                 app:cardCornerRadius="10dp">
 
                 <ImageView
-                    android:id="@+id/labour"
+                    android:id="@+id/labour_img"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
@@ -193,6 +196,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/maid"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="20dp"
@@ -200,7 +204,7 @@
                 app:cardCornerRadius="10dp">
 
                 <ImageView
-                    android:id="@+id/maid"
+                    android:id="@+id/maid_img"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
@@ -226,6 +230,7 @@
             android:gravity="center"
             android:layout_height="wrap_content">
             <androidx.cardview.widget.CardView
+                android:id="@+id/delivery"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="20dp"
@@ -233,7 +238,7 @@
                 app:cardCornerRadius="10dp">
 
                 <ImageView
-                    android:id="@+id/delivery"
+                    android:id="@+id/delivery_img"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"

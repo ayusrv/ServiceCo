@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Cook">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_login_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/any_text2"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello,"
+                    android:textColor="@color/background"
+                    android:textSize="20sp" />
+
+                <TextView
+                    style="bold"
+                    android:id="@+id/textView_show_welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."
+                    android:textColor="@color/background"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="160dp"
+                app:cardCornerRadius="150dp">
+
+                <ImageView
+                    android:id="@+id/imageView_profile_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cook" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView13"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="300dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="100dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F1F3F0">
+
+
+                <ImageView
+                    android:id="@+id/img13"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cook4"
+                    android:scaleType="centerCrop"
+
+                    />
+
+                <TextView
+                    android:id="@+id/name13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img13"
+                    android:text="Vikas Khanna   "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/rating13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/name13"
+                    android:background="@color/background"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="4.4"
+                    android:textSize="16sp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img13"
+                    android:layout_below="@id/location13"
+                    android:text="cook             "
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/background"
+                    android:id="@+id/role13"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img13"
+                    android:layout_below="@id/role13"
+                    android:text="A highly skilled and creative chef with [number of years] of experience in the culinary industry. Proficient in managing all aspects of kitchen
+            android:textSize"
+                    />
+
+                <TextView
+                    android:id="@+id/location13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name13"
+                    android:textColor="@color/background"
+                    android:text="kharar, punjab"
+                    android:textSize="16sp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img13"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView14"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="300dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="100dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F1F3F0">
+
+
+                <ImageView
+                    android:id="@+id/img14"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cook2"
+                    android:scaleType="centerCrop"
+
+                    />
+
+                <TextView
+                    android:id="@+id/name14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img14"
+                    android:text="Anahita Dhondy  "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/rating14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/name14"
+                    android:background="@color/background"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="4.6"
+                    android:textSize="16sp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img14"
+                    android:layout_below="@id/location14"
+                    android:text="cook             "
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/background"
+                    android:id="@+id/role14"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img14"
+                    android:layout_below="@id/role14"
+                    android:text="A highly skilled and creative chef with [number of years] of experience in the culinary industry. Proficient in managing all aspects of kitchen
+            android:textSize"
+                    />
+
+                <TextView
+                    android:id="@+id/location14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name14"
+                    android:textColor="@color/background"
+                    android:text="kharar, punjab"
+                    android:textSize="16sp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img14"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView12"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="300dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="100dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F1F3F0">
+
+
+                <ImageView
+                    android:id="@+id/img12"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cook3"
+
+                    />
+
+                <TextView
+                    android:id="@+id/name12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img12"
+                    android:text="Shipra Khanna  "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/rating12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/name12"
+                    android:background="@color/background"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="4.5"
+                    android:textSize="16sp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img12"
+                    android:layout_below="@id/location12"
+                    android:text="cook                "
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/background"
+                    android:id="@+id/role12"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img12"
+                    android:layout_below="@id/role12"
+                    android:text="A highly skilled and creative chef with [number of years] of experience in the culinary industry. Proficient in managing all aspects of kitchen
+            android:textSize"
+                    />
+
+                <TextView
+                    android:id="@+id/location12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name12"
+                    android:textColor="@color/background"
+                    android:text="kharar, punjab"
+                    android:textSize="16sp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img12"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView22"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="300dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="100dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F1F3F0">
+
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cook1"
+                    android:scaleType="centerCrop"
+
+                    />
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img1"
+                    android:text="Pooja Dhingra  "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/rating1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/name1"
+                    android:background="@color/background"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="4.5"
+                    android:textSize="16sp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img1"
+                    android:layout_below="@id/location1"
+                    android:text="cook                "
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/background"
+                    android:id="@+id/role2"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img1"
+                    android:layout_below="@id/role2"
+                    android:text="A highly skilled and creative chef with [number of years] of experience in the culinary industry. Proficient in managing all aspects of kitchen
+            android:textSize"
+                    />
+
+                <TextView
+                    android:id="@+id/location1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name1"
+                    android:textColor="@color/background"
+                    android:text="kharar, punjab"
+                    android:textSize="16sp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img1"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="300dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="100dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F1F3F0">
+
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cook5"
+                    android:scaleType="centerCrop"
+
+                    />
+
+                <TextView
+                    android:id="@+id/name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img3"
+                    android:text="Kunal Kapur  "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/rating3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/name3"
+                    android:background="@color/background"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="4.8"
+                    android:textSize="16sp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img3"
+                    android:layout_below="@id/location3"
+                    android:text="cook                "
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/background"
+                    android:id="@+id/role3"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img3"
+                    android:layout_below="@id/role3"
+                    android:text="A highly skilled and creative chef with [number of years] of experience in the culinary industry. Proficient in managing all aspects of kitchen
+            android:textSize"
+                    />
+
+                <TextView
+                    android:id="@+id/location3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name3"
+                    android:textColor="@color/background"
+                    android:text="kharar, punjab"
+                    android:textSize="16sp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img3"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="300dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="100dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F1F3F0">
+
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cook6"
+                    android:scaleType="centerCrop"
+                    />
+
+                <TextView
+                    android:id="@+id/name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img4"
+                    android:text="Vineet Bhatia  "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/rating4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/name4"
+                    android:background="@color/background"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="4.2"
+                    android:textSize="16sp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img4"
+                    android:layout_below="@id/location4"
+                    android:text="cook                "
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/background"
+                    android:id="@+id/role4"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img4"
+                    android:layout_below="@id/role4"
+                    android:text="A highly skilled and creative chef with [number of years] of experience in the culinary industry. Proficient in managing all aspects of kitchen
+            android:textSize"
+                    />
+
+                <TextView
+                    android:id="@+id/location4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name4"
+                    android:textColor="@color/background"
+                    android:text="kharar, punjab"
+                    android:textSize="16sp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img4"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="300dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="100dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F1F3F0">
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cook7"
+                    android:scaleType="centerCrop"
+
+                    />
+
+                <TextView
+                    android:id="@+id/name5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img5"
+                    android:text="Vicky Ratnani  "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/rating5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/name5"
+                    android:background="@color/background"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="4.7"
+                    android:textSize="16sp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img5"
+                    android:layout_below="@id/location5"
+                    android:text="cook                "
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/background"
+                    android:id="@+id/role5"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img5"
+                    android:layout_below="@id/role5"
+                    android:text="A highly skilled and creative chef with [number of years] of experience in the culinary industry. Proficient in managing all aspects of kitchen
+            android:textSize"
+                    />
+
+                <TextView
+                    android:id="@+id/location5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name5"
+                    android:textColor="@color/background"
+                    android:text="kharar, punjab"
+                    android:textSize="16sp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@id/img5"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
