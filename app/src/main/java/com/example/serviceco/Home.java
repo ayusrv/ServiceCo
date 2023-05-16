@@ -68,6 +68,33 @@ public class Home extends AppCompatActivity {
             }
         });
 
+        delivery = findViewById(R.id.delivery);
+        delivery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, Delivery.class);
+                startActivity(intent);
+            }
+        });
+
+        maid = findViewById(R.id.maid);
+        maid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, Maid.class);
+                startActivity(intent);
+            }
+        });
+
+        babysitter = findViewById(R.id.babysitter);
+        babysitter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, BabySitter.class);
+                startActivity(intent);
+            }
+        });
+
         authProfile = FirebaseAuth.getInstance();
         FirebaseUser firebaseUser = authProfile.getCurrentUser();
 

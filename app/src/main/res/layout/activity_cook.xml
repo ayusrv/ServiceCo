@@ -76,7 +76,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView13"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="180dp"
             android:layout_marginBottom="300dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -96,8 +96,8 @@
                 <ImageView
                     android:id="@+id/img13"
                     android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/cook4"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cook1"
                     android:scaleType="centerCrop"
 
                     />
@@ -109,8 +109,20 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img13"
-                    android:text="Vikas Khanna   "
+                    android:text="Diksha Sharma   "
                     android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mobile13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_below="@id/role13"
+                    android:layout_toEndOf="@id/img13"
+                    android:text="7894893930 | 26 ratings"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
 
@@ -119,10 +131,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@id/name13"
-                    android:background="@color/background"
+                    android:background="#664962"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
-                    android:text="4.4"
+                    android:text="9.5"
                     android:textSize="16sp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
                     android:textStyle="bold"
@@ -133,10 +145,10 @@
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img13"
                     android:layout_below="@id/location13"
-                    android:text="cook             "
+                    android:text="cook"
                     android:textSize="16dp"
                     android:textStyle="bold"
-                    android:textColor="@color/background"
+                    android:textColor="#664962"
                     android:id="@+id/role13"
 
 
@@ -147,9 +159,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img13"
-                    android:layout_below="@id/role13"
-                    android:text="A highly skilled and creative chef with [number of years] of experience in the culinary industry. Proficient in managing all aspects of kitchen
-            android:textSize"
+                    android:layout_below="@id/mobile13"
+                    android:text="Professional Cook with [X] years of experience in high-volume restaurant environments. Skilled in preparing and presenting diverse cuisines with a focus on taste, presentation"
+
+
+
                     />
 
                 <TextView
@@ -157,8 +171,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/name13"
-                    android:textColor="@color/background"
-                    android:text="kharar, punjab"
+                    android:textColor="#664962"
+                    android:text="Kolkata, WB"
                     android:textSize="16sp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
                     android:textStyle="bold"
@@ -171,7 +185,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView14"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="180dp"
             android:layout_marginBottom="300dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -191,10 +205,9 @@
                 <ImageView
                     android:id="@+id/img14"
                     android:layout_width="120dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:src="@drawable/cook2"
                     android:scaleType="centerCrop"
-
                     />
 
                 <TextView
@@ -204,7 +217,7 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img14"
-                    android:text="Anahita Dhondy  "
+                    android:text="Jasleen ksur   "
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -213,11 +226,15 @@
                     android:id="@+id/rating14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+
+
+
+
                     android:layout_toEndOf="@id/name14"
-                    android:background="@color/background"
+                    android:background="#664962"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
-                    android:text="4.6"
+                    android:text="4.7"
                     android:textSize="16sp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
                     android:textStyle="bold"
@@ -228,23 +245,37 @@
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img14"
                     android:layout_below="@id/location14"
-                    android:text="cook             "
+                    android:text="cook"
                     android:textSize="16dp"
                     android:textStyle="bold"
-                    android:textColor="@color/background"
+                    android:textColor="#664962"
                     android:id="@+id/role14"
 
 
                     />
+                <TextView
+                    android:id="@+id/mo14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_below="@id/role14"
+                    android:layout_toEndOf="@id/img14"
+                    android:text="780349293 | 18 ratings"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img14"
-                    android:layout_below="@id/role14"
-                    android:text="A highly skilled and creative chef with [number of years] of experience in the culinary industry. Proficient in managing all aspects of kitchen
-            android:textSize"
+                    android:layout_below="@id/mo14"
+                    android:text="Proficient in menu recommendations, order taking, and ensuring prompt and accurate delivery of food and beverages. Strong knowledge of food and beverage offerings, including wine pairings and specialty dishes"
+
+
+
+
                     />
 
                 <TextView
@@ -252,8 +283,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/name14"
-                    android:textColor="@color/background"
-                    android:text="kharar, punjab"
+                    android:textColor="#664962"
+                    android:text="Suraj, Gujrat"
                     android:textSize="16sp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
                     android:textStyle="bold"
@@ -266,7 +297,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView12"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="180dp"
             android:layout_marginBottom="300dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -286,10 +317,9 @@
                 <ImageView
                     android:id="@+id/img12"
                     android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
+                    android:layout_height="match_parent"
                     android:src="@drawable/cook3"
-
+                    android:scaleType="centerCrop"
                     />
 
                 <TextView
@@ -299,7 +329,7 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img12"
-                    android:text="Shipra Khanna  "
+                    android:text="dashneet kaur   "
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -308,11 +338,15 @@
                     android:id="@+id/rating12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+
+
+
+
                     android:layout_toEndOf="@id/name12"
-                    android:background="@color/background"
+                    android:background="#664962"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
-                    android:text="4.5"
+                    android:text="7.7"
                     android:textSize="16sp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
                     android:textStyle="bold"
@@ -323,23 +357,36 @@
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img12"
                     android:layout_below="@id/location12"
-                    android:text="cook                "
+                    android:text="cook"
                     android:textSize="16dp"
                     android:textStyle="bold"
-                    android:textColor="@color/background"
+                    android:textColor="#664962"
                     android:id="@+id/role12"
 
 
                     />
 
                 <TextView
+                    android:id="@+id/mo12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_below="@id/role12"
+                    android:layout_toEndOf="@id/img12"
+                    android:text="123456789 | 12 ratings"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img12"
-                    android:layout_below="@id/role12"
-                    android:text="A highly skilled and creative chef with [number of years] of experience in the culinary industry. Proficient in managing all aspects of kitchen
-            android:textSize"
+                    android:layout_below="@id/mo12"
+                    android:text="Expertise in managing kitchen operations, coordinating with the culinary team, and ensuring efficient workflow. Proven ability to adhere to strict hygiene and safety standards"
+
                     />
 
                 <TextView
@@ -347,8 +394,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/name12"
-                    android:textColor="@color/background"
-                    android:text="kharar, punjab"
+                    android:textColor="#664962"
+                    android:text="Mumbai, Maharastra"
                     android:textSize="16sp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
                     android:textStyle="bold"
@@ -361,7 +408,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView22"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="180dp"
             android:layout_marginBottom="300dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -381,8 +428,8 @@
                 <ImageView
                     android:id="@+id/img1"
                     android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/cook1"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cook4"
                     android:scaleType="centerCrop"
 
                     />
@@ -394,7 +441,7 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img1"
-                    android:text="Pooja Dhingra  "
+                    android:text="ayush singh    "
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -403,11 +450,15 @@
                     android:id="@+id/rating1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+
+
+
+
                     android:layout_toEndOf="@id/name1"
-                    android:background="@color/background"
+                    android:background="#664962"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
-                    android:text="4.5"
+                    android:text="8.7"
                     android:textSize="16sp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
                     android:textStyle="bold"
@@ -418,23 +469,38 @@
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img1"
                     android:layout_below="@id/location1"
-                    android:text="cook                "
+                    android:text="cook"
                     android:textSize="16dp"
                     android:textStyle="bold"
-                    android:textColor="@color/background"
+                    android:textColor="#664962"
                     android:id="@+id/role2"
 
 
                     />
 
                 <TextView
+                    android:id="@+id/mo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_below="@id/role2"
+                    android:layout_toEndOf="@id/img1"
+                    android:text="3856792460 | 9 ratings"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img1"
-                    android:layout_below="@id/role2"
-                    android:text="A highly skilled and creative chef with [number of years] of experience in the culinary industry. Proficient in managing all aspects of kitchen
-            android:textSize"
+                    android:layout_below="@id/mo1"
+                    android:text="A dedicated and customer-focused  with [number of years] of experience in the hospitality industry. Skilled in providing exceptional service and creating a positive dining experience for guests."
+
+
+
+
                     />
 
                 <TextView
@@ -442,8 +508,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/name1"
-                    android:textColor="@color/background"
-                    android:text="kharar, punjab"
+                    android:textColor="#664962"
+                    android:text="Jamshedpur, Jharkhand"
                     android:textSize="16sp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
                     android:textStyle="bold"
@@ -456,7 +522,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView3"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="180dp"
             android:layout_marginBottom="300dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -476,8 +542,8 @@
                 <ImageView
                     android:id="@+id/img3"
                     android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/cook5"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cook7"
                     android:scaleType="centerCrop"
 
                     />
@@ -489,7 +555,7 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img3"
-                    android:text="Kunal Kapur  "
+                    android:text="Ankit Kumar    "
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -498,11 +564,15 @@
                     android:id="@+id/rating3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+
+
+
+
                     android:layout_toEndOf="@id/name3"
-                    android:background="@color/background"
+                    android:background="#664962"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
-                    android:text="4.8"
+                    android:text="4.6"
                     android:textSize="16sp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
                     android:textStyle="bold"
@@ -513,32 +583,41 @@
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img3"
                     android:layout_below="@id/location3"
-                    android:text="cook                "
+                    android:text="cook"
                     android:textSize="16dp"
                     android:textStyle="bold"
-                    android:textColor="@color/background"
+                    android:textColor="#664962"
                     android:id="@+id/role3"
 
 
                     />
+                <TextView
+                    android:id="@+id/mo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_below="@id/role3"
+                    android:layout_toEndOf="@id/img3"
+                    android:text="569734067 | 15 ratings"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img3"
-                    android:layout_below="@id/role3"
-                    android:text="A highly skilled and creative chef with [number of years] of experience in the culinary industry. Proficient in managing all aspects of kitchen
-            android:textSize"
+                    android:layout_below="@id/mo3"
+                    android:text="Professional Cook with [X] years of experience in high-volume restaurant environments. Skilled in preparing and presenting diverse cuisines with a focus on taste, presentation"
                     />
-
                 <TextView
                     android:id="@+id/location3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/name3"
-                    android:textColor="@color/background"
-                    android:text="kharar, punjab"
+                    android:textColor="#664962"
+                    android:text="Patna, Bihar"
                     android:textSize="16sp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
                     android:textStyle="bold"
@@ -551,7 +630,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView4"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="180dp"
             android:layout_marginBottom="300dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -571,9 +650,10 @@
                 <ImageView
                     android:id="@+id/img4"
                     android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/cook6"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cook5"
                     android:scaleType="centerCrop"
+
                     />
 
                 <TextView
@@ -583,7 +663,7 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img4"
-                    android:text="Vineet Bhatia  "
+                    android:text="Aman Sinha       "
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -592,11 +672,15 @@
                     android:id="@+id/rating4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+
+
+
+
                     android:layout_toEndOf="@id/name4"
-                    android:background="@color/background"
+                    android:background="#664962"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
-                    android:text="4.2"
+                    android:text="8.6"
                     android:textSize="16sp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
                     android:textStyle="bold"
@@ -607,21 +691,38 @@
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img4"
                     android:layout_below="@id/location4"
-                    android:text="cook                "
+                    android:text="cook"
                     android:textSize="16dp"
                     android:textStyle="bold"
-                    android:textColor="@color/background"
+                    android:textColor="#664962"
                     android:id="@+id/role4"
+
+
                     />
+
+                <TextView
+                    android:id="@+id/mo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_below="@id/role4"
+                    android:layout_toEndOf="@id/img4"
+                    android:text="9977089222 | 16 ratings"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img4"
-                    android:layout_below="@id/role4"
-                    android:text="A highly skilled and creative chef with [number of years] of experience in the culinary industry. Proficient in managing all aspects of kitchen
-            android:textSize"
+                    android:layout_below="@id/mo4"
+                    android:text="Passionate about delivering exceptional dining experiences through the artful presentation and flavorful execution of dishes. Adept at leading and motivating teams to achieve excellence in quality and service. "
+
+
+
+
                     />
 
                 <TextView
@@ -629,8 +730,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/name4"
-                    android:textColor="@color/background"
-                    android:text="kharar, punjab"
+                    android:textColor="#664962"
+                    android:text="Bhopal, MP"
                     android:textSize="16sp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
                     android:textStyle="bold"
@@ -643,7 +744,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView1"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="180dp"
             android:layout_marginBottom="300dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -652,16 +753,19 @@
             android:layout_margin="16dp"
             app:cardCornerRadius="20dp"
             android:elevation="100dp"
+
             >
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#F1F3F0">
+
+
                 <ImageView
                     android:id="@+id/img5"
                     android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/cook7"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cook6"
                     android:scaleType="centerCrop"
 
                     />
@@ -673,7 +777,7 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img5"
-                    android:text="Vicky Ratnani  "
+                    android:text="Manpreet Singh   "
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -682,8 +786,12 @@
                     android:id="@+id/rating5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+
+
+
+
                     android:layout_toEndOf="@id/name5"
-                    android:background="@color/background"
+                    android:background="#664962"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:text="4.7"
@@ -697,21 +805,38 @@
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img5"
                     android:layout_below="@id/location5"
-                    android:text="cook                "
+                    android:text="cook"
                     android:textSize="16dp"
                     android:textStyle="bold"
-                    android:textColor="@color/background"
+                    android:textColor="#664962"
                     android:id="@+id/role5"
+
+
                     />
+
+                <TextView
+                    android:id="@+id/mo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_below="@id/role5"
+                    android:layout_toEndOf="@id/img5"
+                    android:text="8757846756 | 2 ratings"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
                     android:layout_toEndOf="@id/img5"
-                    android:layout_below="@id/role5"
-                    android:text="A highly skilled and creative chef with [number of years] of experience in the culinary industry. Proficient in managing all aspects of kitchen
-            android:textSize"
+                    android:layout_below="@id/mo5"
+                    android:text="A dedicated and customer-focused hotel waiter with [number of years] of experience in the hospitality industry. Skilled in providing exceptional service and creating a positive dining experience for guests."
+
+
+
+
                     />
 
                 <TextView
@@ -719,8 +844,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/name5"
-                    android:textColor="@color/background"
-                    android:text="kharar, punjab"
+                    android:textColor="#664962"
+                    android:text="Mohali, punjab"
                     android:textSize="16sp"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
                     android:textStyle="bold"
