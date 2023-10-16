@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".Delivery">
+    tools:context=".UserData">
 
     <TextView
         android:id="@+id/textview_login_head"

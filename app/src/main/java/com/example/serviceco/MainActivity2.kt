@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.example.serviceco
 
 import android.content.Intent

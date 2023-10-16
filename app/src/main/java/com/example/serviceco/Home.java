@@ -63,7 +63,7 @@ public class Home extends AppCompatActivity {
         cook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home.this, Cook.class);
+                Intent intent = new Intent(Home.this, UserData.class);
                 startActivity(intent);
             }
         });
@@ -91,6 +91,15 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Home.this, BabySitter.class);
+                startActivity(intent);
+            }
+        });
+
+        labour = findViewById(R.id.labour);
+        labour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, Labour.class);
                 startActivity(intent);
             }
         });
@@ -151,9 +160,9 @@ public class Home extends AppCompatActivity {
 
         //Create the AlertDialog
         AlertDialog alertDialog = builder.create();
-
         //Show the dialog
-        alertDialog.show();
+        //alertDialog.show();
+       // finish();
     }
 
     private void showUserProfile(FirebaseUser firebaseUser) {

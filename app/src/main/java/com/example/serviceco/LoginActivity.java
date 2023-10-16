@@ -34,6 +34,7 @@ public class LoginActivity extends AppCompatActivity {
     private ProgressBar progressBar;
     private FirebaseAuth authProfile;
     private static final String TAG = "LoginActivity";
+    FirebaseUser firebaseUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,7 +112,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    FirebaseUser firebaseUser = authProfile.getCurrentUser();
+                    firebaseUser = authProfile.getCurrentUser();
                     if(firebaseUser.isEmailVerified()){
                         Toast.makeText(LoginActivity.this, "You logged in",Toast.LENGTH_SHORT).show();
 
@@ -175,7 +176,8 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        if(authProfile.getCurrentUser()!=null){
+        firebaseUser = authProfile.getCurrentUser();
+        if(authProfile.getCurrentUser()!=null && firebaseUser.isEmailVerified()){
             Toast.makeText(LoginActivity.this, "Already Logged in", Toast.LENGTH_SHORT).show();
             //Start the UserProfileActivity
             startActivity(new Intent(LoginActivity.this, Home.class));
